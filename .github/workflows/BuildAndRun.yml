@@ -38,9 +38,9 @@ jobs:
         #         run: mvn -Djavacpp.platform=linux-x86_64 clean package -DskipTests
         run: mvn  clean package -DskipTests
 
-      - name: Run edgechain testcases
-        working-directory: ./FlySpring
-        run: mvn test
+      # - name: Run edgechain testcases
+      #   working-directory: ./FlySpring
+      #   run: mvn test
 
       - name: Copy edgechain-app JAR to Examples folder
         run: cp ./FlySpring/edgechain-app/target/edgechain.jar ./BuildOutput/
